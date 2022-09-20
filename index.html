@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="True" />
+    <!-- PAGE TITLE HERE -->
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="./img/logo1.png" />
+    <link rel="shortcut icon" href="./img/logo1.png" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="./wp-content/themes/black-cobra/assets/css/plugins.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./wp-content/themes/black-cobra/assets/plugins/magnific/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="./wp-content/themes/black-cobra/assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./wp-content/themes/black-cobra/assets/css/style.css">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" media="all"
+        href="./css/one.css" />
+    <link rel="stylesheet" media="all"
+        href="./css/two.css" />
+    <link rel="stylesheet" media="all" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" media="all" href="//fonts.googleapis.com/css2?family=Roboto:wght@500&amp;display=swap" />
+    <link rel="stylesheet" media="all" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" media="all" href="//unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" media="all"
+        href="./css/three.css" />
+    <link rel="stylesheet" media="all"
+        href="./css/eight.css" />
+    <link rel="stylesheet" media="all"
+        href="./css/four.css" />
+    <link rel="stylesheet" media="screen"
+        href="./css/five.css" />
+    <link rel="stylesheet" media="print"
+        href="./css/six.css" />
+    <link rel="stylesheet" media="all"
+        href="./css/seven.css" />
+
+        <script src="./js/three.js"></script>
+        <script src="./js/four.js"></script>
+
+    <style>
+
+.navbar-header{
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .settle{
+        display: inline-block;
+        color:#ffffff;
+        
+    }
+
+    .tanta2{
+        display: none;
+    }
+
+    .punya1{
+        padding-top: 50px;
+    }
+    .punya2{
+        margin-bottom: 50px;
+    }
+    .punya3{
+        margin-bottom: 50px;
+    }
+
+     
+   
+
+    
+
+}
+
+@media (min-width: 1200px)
+{
+    .tanta1{
+        display:none;
+    }
+   
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    margin-bottom: -40px;
+    /* margin-right: -50px; */
+}
+
+ .shrink {
+    --bs-gutter-x: -22.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+       
+
+       
+
+
+        .site-header .navbar .navbar-nav  li a:hover {
+    color: red;
+    font-weight: bolder;
+    padding: 0.8rem 1.2rem;
+    position: relative;
+}
+        .site-header .navbar .navbar-nav .nav-link  li a:hover {
+    color: red;
+    font-weight: bolder;
+    padding: 0.8rem 1.2rem;
+    position: relative;
+}
+
+footer .footer-social a:hover {
+    margin-right: 5px;
+    background-color: pink;
+    color: #000;
+}
+
+
+
+
+
+img.cg-what {
+    position: fixed;
+    width: 70px;
+    bottom: 25px;
+    left: 50px;
+}
+        .about {
+    background-color: #fffbfa;
+    margin-top: -100px;
+    padding-top: 150px;
+}
+
+
+
+        .navbar-header {
+    background: ;
+    position: relative;
+    height: 100px;
+}
+
+.navbar-header::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    background: #fff;
+    top: 0;
+    right: -30px;
+    left: 100%;
+}
+
+.navbar-header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    background: #fff;
+    top: 0;
+    left: -30px;
+    right: 100%;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.site-header .navbar .navbar-nav .nav-item .nav-link:hover {
+   color:var(--wp--preset--color--vivid-red);
+   /* border-bottom:2px solid red; */
+    font-weight: bolder;
+    
+    
+}
+
+footer .nav-link:hover {
+    /* padding-left: 0.5rem; */
+    color: yellowgreen;
+}
+
+footer h5:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    background: #fff;
+    width: 15px;
+    height: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .journey{
+        height:100vh;
+    }
+
+    .toto{
+        margin-top:-100px;
+    }
+
+
+    .slider-container {
+        display: none;
+    }
+
+    .about{
+        margin-top: -150px;
+    }
+
+    .product-solutions .mx-auto h2{
+        display: none;
+    }
+
+    .mob{
+        padding-right: 20px;
+    }
+    .silly{
+        padding-right:20px;
+    }
+    .why{
+        margin-top: -100px;
+    }
+  
+}
+
+    </style>
+
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '469982647559543');
+        fbq('track', 'PageView');
+    </script>
+    
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6102391083fc3c00121c8e78&product=inline-share-buttons" async="async"></script>
+    <meta name="keywords" content="" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <!-- This site is optimized with the Yoast SEO plugin v19.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative" />
+    <link rel="canonical" href="./" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Manufacturer Of Home Decor Products | black-cobra Group" />
+    <meta property="og:description" content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative" />
+    <meta property="og:url" content="./" />
+    <meta property="og:site_name" content="black-cobra" />
+    <meta property="article:modified_time" content="2022-08-13T10:37:53+00:00" />
+    <meta property="og:image" content="./wp-content/uploads/2022/08/web-banner_black-cobra.png" />
+    <meta property="og:image:width" content="685" />
+    <meta property="og:image:height" content="744" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="1 minute" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                "@type": "WebPage",
+                "@id": "./",
+                "url": "./",
+                "name": "Manufacturer Of Home Decor Products | black-cobra Group",
+                "isPartOf": {
+                    "@id": "./#website"
+                },
+                "about": {
+                    "@id": "./#organization"
+                },
+                "primaryImageOfPage": {
+                    "@id": "./#primaryimage"
+                },
+                "image": {
+                    "@id": "./#primaryimage"
+                },
+                "thumbnailUrl": "./wp-content/uploads/2022/08/web-banner_black-cobra.png",
+                "datePublished": "2020-09-29T07:16:40+00:00",
+                "dateModified": "2022-08-13T10:37:53+00:00",
+                "description": "Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative",
+                "breadcrumb": {
+                    "@id": "./#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [{
+                    "@type": "ReadAction",
+                    "target": ["./"]
+                }]
+            }, {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "./#primaryimage",
+                "url": "./wp-content/uploads/2022/08/web-banner_black-cobra.png",
+                "contentUrl": "./wp-content/uploads/2022/08/web-banner_black-cobra.png",
+                "width": 685,
+                "height": 744
+            }, {
+                "@type": "BreadcrumbList",
+                "@id": "./#breadcrumb",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home"
+                }]
+            }, {
+                "@type": "WebSite",
+                "@id": "./#website",
+                "url": "./",
+                "name": "black-cobra",
+                "description": "black-cobra Group",
+                "publisher": {
+                    "@id": "./#organization"
+                },
+                "potentialAction": [{
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "./?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }],
+                "inLanguage": "en-US"
+            }, {
+                "@type": "Organization",
+                "@id": "./#organization",
+                "name": "black-cobra",
+                "url": "./",
+                "sameAs": [],
+                "logo": {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "./#/schema/logo/image/",
+                    "url": "./wp-content/uploads/2021/02/black-cobra-logo.png",
+                    "contentUrl": "./wp-content/uploads/2021/02/black-cobra-logo.png",
+                    "width": 170,
+                    "height": 45,
+                    "caption": "black-cobra"
+                },
+                "image": {
+                    "@id": "./#/schema/logo/image/"
+                }
+            }]
+        }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/www.black-cobra.com\/wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode,
+                    e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL());
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='./wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='./wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-pagenavi-css' href='./wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jvcf7_client_css-css' href='./wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css' type='text/css' media='all' />
+    <script type='text/javascript' src='./wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/black-cobra/includes/js/third-party.js' id='third party-js'></script>
+    <script type='text/javascript' src='./wp-content/themes/black-cobra/includes/js/general.js' id='general-js'></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "black-cobra Group",
+            "image": "./wp-content/themes/black-cobra/assets/images/logo-white.png",
+            "@id": "",
+            "url": "./",
+            "telephone": "011 4742 2222",
+            "priceRange": "$$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "D-117, Pocket D, Okhla Phase I, Okhla Industrial Area",
+                "addressLocality": "New Delhi",
+                "postalCode": "110020",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 28.5217281,
+                "longitude": 77.2793286
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
+                "opens": "09:30",
+                "closes": "18:00"
+            },
+            "sameAs": [
+                "https://www.facebook.com/black-cobraindia",
+                "https://twitter.com/black-cobrainates",
+                "https://www.instagram.com/black-cobrainates/",
+                "https://www.youtube.com/channel/UCoM4Ekh70pgqK-N0i-vE8tw",
+                "https://in.linkedin.com/company/black-cobra-group-of-industries"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "black-cobra Group",
+            "url": "http://www.black-cobra.com/",
+            "logo": "./wp-content/themes/black-cobra/assets/images/logo-white.png",
+            "sameAs": [
+                "https://www.facebook.com/black-cobraindia",
+                "https://twitter.com/black-cobrainates",
+                "https://www.instagram.com/black-cobrainates/",
+                "https://www.youtube.com/channel/UCoM4Ekh70pgqK-N0i-vE8tw",
+                "https://in.linkedin.com/company/black-cobra-group-of-industries"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "black-cobra Group",
+            "url": "http://www.black-cobra.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "./#searchdrop{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <title>BLACK COBRA</title>
+    <meta name="title" content="Manufacturer Of Home Decor Products | black-cobra Group" />
+    <meta name="description" content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative." />
+
+    <meta name="keywords" content="Manufacturer Of Home Decor Products, Home Decor Manufacturers, Wholesale Home Decor Suppliers, Home Decor Wholesale Suppliers, Decorative Item Manufacturers, Home Decor Suppliers, Home Decor Products Wholesale, ACP Sheets,acp sheet price,aluminium composite panel,acp sheet dealers near me,aluminium composite panel manufacturers, acp sheet manufacturer,aluminum sheet supplier,Acp sheet manufacturer in India,aluminium sheet manufacturer,acp sheet company,	acp sheet dealer,Laminates,Laminate Sheeting,Wooden Laminates,laminate wood flooring,laminates manufacturer,laminates company,hpl brands,laminates brands,top 10 laminate brands in world
+
+<!-- Open Graph / Facebook -->
+<meta property=" og:type " content="website " />
+<meta property="og:url " content="index.php " />
+
+
+<meta property="og:image " content="images/black-cobra.png " />
+<!-- Twitter -->
+<meta property="twitter:card " content="summary_large_image " />
+<meta property="twitter:url " content="index.php " />
+<meta property="twitter:title " content="Manufacturer Of Home Decor Products | black-cobra Group " />
+<meta property="twitter:description " content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative. " />
+<meta property="twitter:image " content="images/black-cobra.png " />
+<!-- meta character set -->
+<meta name="audience " content="all "/>
+<meta property="og:type " content="website " />
+<meta name="robots " content="index, follow " />
+<meta name="googlebot " content="index, follow "/>
+<meta name="document-type " content="Public " />
+<META NAME="revisit-after " CONTENT="1 days ">
+
+<meta property="og:site_name " content="black-cobra ">
+<meta property="og:url " content="index.php ">
+<meta property="og:type " content="website ">
+<meta property="og:image " content="images/black-cobra.png ">
+<meta name="twitter:card " content="summary_large_image ">
+<meta name="twitter:title " content="Manufacturer Of Home Decor Products | black-cobra Group ">
+<meta name="twitter:description " content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative. ">
+<meta name="twitter:image " content="images/black-cobra.png <!-- Author Meta -->
+    <meta name="author" content="./">
+    <link rel="canonical" href="https://
+<meta name=" title " content="Manufacturer Of Home Decor Products | black-cobra Group " />
+<meta name="description " content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative. " />
+<meta name="keywords " content="Manufacturer Of Home Decor Products, Home Decor Manufacturers, Wholesale Home Decor Suppliers, Home Decor Wholesale Suppliers, Decorative Item Manufacturers, Home Decor Suppliers, Home Decor Products Wholesale, ACP Sheets,acp
+        sheet price,aluminium composite panel,acp sheet dealers near me,aluminium composite panel manufacturers, acp sheet manufacturer,aluminum sheet supplier,Acp sheet manufacturer in India,aluminium sheet manufacturer,acp sheet company, acp sheet dealer,Laminates,Laminate
+        Sheeting,Wooden Laminates,laminate wood flooring,laminates manufacturer,laminates company,hpl brands,laminates brands,top 10 laminate brands in world. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type " content="website " />
+<meta property="og:url " content="index.php " />
+
+<meta property="og:image " content="images/black-cobra.png " />
+<!-- Twitter -->
+<meta property="twitter:card " content="summary_large_image " />
+<meta property="twitter:url " content="index.php " />
+<meta property="twitter:title " content="Manufacturer Of Home Decor Products | black-cobra Group " />
+<meta property="twitter:description " content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative. " />
+<meta property="twitter:image " content="images/black-cobra.png " />
+<!-- meta character set -->
+<meta name="audience " content="all "/>
+<meta property="og:type " content="website " />
+<meta name="robots " content="index, follow " />
+<meta name="googlebot " content="index, follow "/>
+<meta name="document-type " content="Public " />
+<META NAME="revisit-after " CONTENT="1 days ">
+
+<meta property="og:site_name " content="black-cobra ">
+<meta property="og:url " content="index.php ">
+
+<meta property="og:type " content="website ">
+<meta property="og:image " content="images/black-cobra.png ">
+<meta name="twitter:card " content="summary_large_image ">
+<meta name="twitter:title " content="Manufacturer Of Home Decor Products | black-cobra Group ">
+<meta name="twitter:description " content="Beautify your spaces with black-cobra, manufacturer of home décor products in India. We offer a wide array of premium quality products that are unique and creative. ">
+<meta name="twitter:image " content="images/black-cobra.png ">
+
+<!-- Author Meta -->
+<meta name="author " content="./ ">
+<link rel="canonical " href="./ ">
+<link rel="alternate " href="./ " hreflang="it-it ">
+<link rel="alternate " href="./ " hreflang="en-gb ">
+<include src="./wp-includes/seo.html "></include>www.black-cobra.com/">
+    <link rel="alternate" href="./" hreflang="it-it">
+    <link rel="alternate" href="./" hreflang="en-gb">
+    <include src="./wp-includes/seo.html"></include>
+    <!-- Markup (JSON-LD) structured in schema.org ver.4.8.1 START -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": [
+                "Laminates",
+                "Aluminium",
+                "Experience Center",
+                "ACP",
+                "Where to Buy",
+                "Blogs",
+                "Career",
+                "Contact Us"
+            ],
+            "url": [
+                "./laminates/",
+                "./aluminium/",
+                "./experience-center/",
+                "./acp/",
+                "./where-to-buy/",
+                "./blogs/",
+                "./career/",
+                "./contact/"
+            ]
+        }
+    </script>
+    <!-- Markup (JSON-LD) structured in schema.org END -->
+    <link rel="shortcut icon" href="./wp-content/uploads/2021/03/favicon.png" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+<script src="./wp-content/themes/black-cobra/includes/js/respond-IE.js"></script>
+<![endif]-->
+    <!--[if lte IE 8]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body class="home page-template-default page page-id-2 layout-2cr two-col-left">
+    <!-- Start header -->
+
+    <header id="top-header" class="site-header">
+        <nav class="navbar container navbar-expand-xl px-md-0 py-0 navbar-dark">
+            <div class="navbar-header">
+                <a href="tel:+919355504111"> 
+                    <img src="./img/phone.gif" class="cg-what" style="width: 60px;"> 
+                </a>
+                <a class="navbar-brand pt-4" href=".">
+             <img src="./img/bc-logo.png" alt="logo" class="logo img-fluid" >
+          </a>
+            </div>
+            <div class="navbar-collapse offcanvas-collapse" id="offcanvassidebar">
+                <button class="navbar-toggler close px-3 pt-3 mt-3 border-0 text-right" type="button" data-toggle="offcanvas" data-target="offcanvassidebar">
+          <i class="fas fa-times"></i>
+          </button>
+                <ul class="navbar-nav ml-auto" id="mainmenu">
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="offcanvas" href="">HOME</a>
+                    </li>
+
+
+                   
+
+                    <li class="nav-item custom-dropdown custom-navs-linked">
+                        <a class="nav-link"  href="#" aria-expanded="false" aria-controls="aboutmenu">
+                ABOUT US
+              </a>
+                       
+                    </li>
+                    <li class="nav-item custom-dropdown tanta1">
+                        <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false" aria-controls="productmenu" href="#productmenu">OUR PRODUCTS</a>
+                        <div class="collapse dropdown-menu" id="productmenu">
+                            <div class="row">
+
+                                <a class="dropdown-item col-xl" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/pvc.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            PVC
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/acp.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            ACP
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/laminate.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            LAMINATES
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/aluminium.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            ALUMINIUM
+                                        </div>
+                                    </div>
+                                </a>
+                               
+                                
+                                <a class="dropdown-item col-xl" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/plywood.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            PLYWOOD
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                              
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-dropdown tanta2">
+                        <a class="nav-link dropdown-toggle" data-toggle="collapse" aria-expanded="false" aria-controls="productmenu" href="#productmenu">OUR PRODUCTS</a>
+
+                        <div class="collapse dropdown-menu" id="productmenu" style="background:transparent;">
+                            <div class="row shrink" style="border:2px solid #343132; background-color: #343132;">
+
+                                <a class="dropdown-item col-xl settle" data-toggle="offcanvas" href="#" style="border: 2px solid #343132; border-radius: 50%; color: #343132; ">
+                                    <div class="card flex-xl-column flex-row align-items-center settle" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2 settle">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/pvc.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            <p style="margin-top:-15px;">PVC</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl settle" data-toggle="offcanvas" href="#" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                    <div class="card flex-xl-column flex-row align-items-center settle" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/acp.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            <p style="margin-top:-15px;">ACP</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl settle" data-toggle="offcanvas" href="#" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                    <div class="card flex-xl-column flex-row align-items-center settle" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/laminate.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            <p style="margin-top:-15px;">LAMINATES</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item col-xl settle" data-toggle="offcanvas" href="#" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                    <div class="card flex-xl-column flex-row align-items-center settle" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/aluminium.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            <p style="margin-top:-15px;">ALUMINIUM</p>
+                                        </div>
+                                    </div>
+                                </a>
+                               
+                                
+                                <a class="dropdown-item col-xl settle" data-toggle="offcanvas" href="#" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                    <div class="card flex-xl-column flex-row align-items-center settle" style="border: 2px solid #343132; border-radius: 50%; color:#343132;">
+                                        <div class="d-flex justify-content-center align-items- px-3 pt-4 mb-2">
+                                            <div class="sprite-icon w-50p">
+                                                <img src="./img/plywood.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                        <p style="margin-top:-15px;">PLYWOOD</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                              
+                            </div>
+                        </div>
+                    </li>                    <li class="nav-item custom-dropdown">
+                        <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="pressmenu">
+                MEDIA & EVENTS
+              </a>
+                        <!-- <div class="collapse dropdown-menu" id="pressmenu">
+                            <div class="row">
+                                <a class="dropdown-item col-xl-6" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center  px-3 pt-4 mb-2">
+                                            <div class="sprite-icon icon-users-bulding w-50p"></div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            GALLERY
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-xl-6" data-toggle="offcanvas" href="#">
+                                    <div class="card flex-xl-column flex-row align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center  px-3 pt-4 mb-2">
+                                            <div class="sprite-icon icon-calender-time w-50p"></div>
+                                        </div>
+                                        <div class="card-body text-center pb-xl-5">
+                                            EVENTS
+                                        </div>
+                                    </div>
+                                </a>
+                               
+                                
+                            </div>
+                        </div> -->
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="offcanvas" href="#">E-CATALOGUES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="offcanvas" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas" data-target="offcanvassidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+        </nav>
+
+    </header>
+    <!-- end of header -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+    </script>
+
+    <main class="page-wrapper home-page">
+        <!-- BANNER -->
+        <section class="banner py-0">
+            
+            <div
+            class="jumbotron d-flex flex-column flex-grow-1 bg-gradient-1-rev ndm-overlay-1 bg-dark idm-hero-carousel-wrapper landing pb-5 pb-md-0">
+            <div class="flex-grow-1 d-flex flex-column justify-content-end position-relative trans pb-5 pb-md-0">
+                <div class="ndm-pl-container">
+    
+                    <div class="region region-hero-slider">
+                        <div id="block-widgetfaqsv2-7"
+                            class="block--hero-slider block--nir-faq__widget block--nir-faq__widget--5811 block--hero-slider--nir-faq__widget block--hero-slider--nir-faq__widget--5811 block--007da83c-cf51-4e33-a1ee-9600c40ca433 block--007da83c-cf51-4e33-a1ee-9600c40ca433--5811 block block-nir-faq block-nir-faq__widget">
+    
+    
+                            <div class="nir-widget">
+                                <div class="nir-widget--content">
+                                    <div class="nir-widget--list">
+    
+                                        <article role="article"
+                                            class="clearfix node node--nir-faq--nir-faq-widget-list-accordion node--type-nir-faq node--view-mode-nir-faq-widget-list-accordion">
+    
+    
+    
+    
+    
+                                            <div class="row gx-0">
+                                                <div class="col-1 position-relative mt-n5">
+                                                    <div class="data-carousel-progress">
+                                                        <span class="progress-indicator"></span>
+                                                        <span class="progress-level"></span>
+                                                    </div>
+                                                    <!-- <div class="carousel-num currentPosition">01</div> -->
+                                                </div>
+                                                <div class="col-11">
+                                                    <div class="ndm-pr-container">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-9 col-xl-8">
+                                                                <div
+                                                                    class="idm-hero-carousel owl-carousel owl-theme">
+    
+                                                                    <div class="item img" data-alt=""
+                                                                        data-entity-type="file"
+                                                                        data-entity-uuid="2c4b9b0c-ae83-4635-bfd1-6d41805fcb61"
+                                                                        data-hash=""
+                                                                        data-src="img/slider1.png" 
+                                                                        data-sub-title=""
+                                                                        data-title="PREMIUM QUALITY LAMINATES">
+    
+                                                                        <h2 style="color: #fff;"><span style="color: red;">BLACK COBRA</span> <span> "Sensible choice for sensible people"</span></h2>
+    
+    
+    
+    
+                                                                        <a aria-label="button Learn more"
+                                                                            class="btn btn-lg"
+                                                                            href="#" style="background-color: #000; color:#fff; font-weight:600;">KNOW MORE</a>
+                                                                    </div>
+                                                                    <div class="item"
+                                                                        data-alt=""
+                                                                        data-entity-type="file"
+                                                                        data-entity-uuid="22fc6d9a-613f-49b9-a3cf-c968afa77a55"
+                                                                        data-hash=""
+                                                                        data-src="img/slider2.png"
+                                                                        data-sub-title=""
+                                                                        data-title="BEST BUILD QUALITY">
+
+                                                                        <h2 style="color: #fff;"><span style="color: red;">BLACK COBRA</span> <span> Reflection of your standards by our laminates </span></h2>
+    
+    
+                                                                        
+    
+    
+                                                                        <a aria-label="button Learn more"
+                                                                            class="btn btn-lg"
+                                                                            href="#" style="background-color: #000; color:#fff; font-weight:600;">KNOW MORE</a>
+                                                                    </div>
+                                                                    <div class="item" data-alt=""
+                                                                        data-entity-type="file"
+                                                                        data-entity-uuid="97e571c9-dfe1-44a3-9fcb-af937d0a118d"
+                                                                        data-hash=""
+                                                                        data-src="img/slider3.png"
+                                                                        data-sub-title=""
+                                                                        data-title="BEST-IN-CLASS PLYWOOD PRODUCTS">
+                                                                        <!-- <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptas molestias</h1> -->
+    
+                                                                        <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea impedit, modi dolores quis fuga voluptatem?</h1> -->
+    
+                                                                        <h2 style="color: #fff;"><span style="color: red;">BLACK COBRA</span> <span> Surprises you by the quality </span></h2>
+    
+    
+                                                                        
+    
+    
+                                                                        <a aria-label="button Learn more"
+                                                                            class="btn btn-lg"
+                                                                            href="" style="background-color: #000; color:#fff; font-weight:600;">KNOW MORE</a>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="col-3 text-md-end mt-4">
+                                                                <a href="#" class="pause-carousel"
+                                                                    aria-label="pause carousel btn">
+                                                                    <i aria-hidden="true"
+                                                                        class="far fa-pause-circle fa-lg"><span
+                                                                            class="sr-only">pause carousel
+                                                                            icon</span></i>
+                                                                    <span class="visually-hidden">Pause
+                                                                        Carousel</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+                                        </article>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="row gx-0 d-none d-md-block">
+                        <div class="col-11 offset-1">
+                            <div class="row gx-0 align-items-end justify-content-end">
+    
+                                <div class="col-lg-9">
+                                    <ul class="idm-carousel-nav bg-blur mt-5 bg-gradient-2-rev">
+                                        <!--items for slider appended via ndm-functions.js-->
+                                    </ul>
+                                </div>
+    
+                                <!-- <div class="col-lg-3 d-none d-lg-block">
+                                    <div class="region region-hero-extra">
+                                        <div id="block-widgetassetsv2-2"
+                                            class="block--modal-video block--nir-assets__widget block--nir-assets__widget--5811 block--hero-extra--nir-assets__widget block--hero-extra--nir-assets__widget--5811 block--46619357-c22d-4e68-ac15-74e47c03c958 block--46619357-c22d-4e68-ac15-74e47c03c958--5811 block block-nir-assets block-nir-assets__widget">
+    
+    
+                                            <div class="nir-widget">
+                                                <div class="nir-widget--content">
+                                                    <div class="nir-widget--list">
+                                                        <div class="h-100 d-flex flex-column justify-content-end">
+    
+    
+                                                            <a aria-label="Hero video"
+                                                                href="./img/slider-video.mp4"
+                                                                data-bs-toggle="modal" data-bs-target="#videoModal"
+                                                                class="ndm-video-link">
+    
+    
+    
+                                                                <div class="field-nir-thumbnail" >
+                                                                    <div class="field__item"><img
+                                                                            src="./img/slider-video.png"
+                                                                            alt="Hero video thumb"
+                                                                            class="image-style-nir-asset-small" / >
+    
+                                                                    </div>
+                                                                </div>
+    
+    
+    
+    
+    
+    
+                                                                <div class="small ndm-learn-more">
+    
+                                                                </div>
+    
+                                                            </a>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- /BANNER -->
+
+        <!-- ABOUT -->
+        <section class="about">
+            <section class="py-5 px-md-0" style="padding-top:150px;">
+                <div class="ndm-pl-container">
+                    <div class="row gx-0">
+                        <div class="col-md-6 col-xl-5 mb-5 mb-md-0">
+                            <div class="block-region-column3">
+                                <div class="block-content--nir-lp-block block-content--nir-lp-block--8366 block--block-content3521e307-d20b-456b-b4b3-eeac1806f6e1 block--block-content3521e307-d20b-456b-b4b3-eeac1806f6e1--7771 block--column3--block-content--3521e307-d20b-456b-b4b3-eeac1806f6e1 block--column3--block-content--3521e307-d20b-456b-b4b3-eeac1806f6e1--7771 block--ea13431d-94e0-4c70-bc44-139854617d42 block--ea13431d-94e0-4c70-bc44-139854617d42--7771 block block-block-content block-block-content3521e307-d20b-456b-b4b3-eeac1806f6e1">
+
+
+
+                                    <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item mob">
+                                        <div class="field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item">
+                                            <h2 style="margin-bottom: 5px;">Welcome to BLACK COBRA</h2>
+
+                                            <p style="text-align: justify;">BLACK COBRA Group is a distinguished pillar of the Indian building materials sector since 1992. If manufactures high-quality plywood under the brand name BLACK COBRA, which is among the top 10 plywood brands in the India. The Group has over 1 million square feet of manufacturing space spread across 6 manufacturing plants.</p>
+
+                                            <p style="text-align: justify;">The group also manufactures Aluminium Composite Panels (ACP) under the brand name of "<b>Alex Panels</b>", which is among the pioneers of the ACP industry in India and among the top 5 ACP brands in the country. The products of the grup are trusted by the leading institutions in the India such as ITC, DLF, Supertech, Delhi Metro Rail Corporation, Indian Oil, LIC, SBI, HDFC, LG, Patanjali, Volkswagen, PWD, Samsung, Airports Authority of India, MMRDA, IGL, Shapoorji Pallonji, & more.</p>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <a aria-label="button Learn more"
+                                    class="btn btn-lg "
+                                    href="#" style="background-color: #343132; color:#fff;">KNOW MORE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-7 ndm-pl-md-10 ndm-pl-lg-15 silly">
+                            <div class="careers-collage">
+                                <div class="block-region-secondarycolumn1">
+                                    <div class="block-content--nir-lp-block block-content--nir-lp-block--12001 block--block-content8b2f7192-9b5d-4cae-903c-1f2674cb1095 block--block-content8b2f7192-9b5d-4cae-903c-1f2674cb1095--7771 block--secondarycolumn1--block-content--8b2f7192-9b5d-4cae-903c-1f2674cb1095 block--secondarycolumn1--block-content--8b2f7192-9b5d-4cae-903c-1f2674cb1095--7771 block--80d34d8d-9a44-4d1a-b54c-99f0efb22803 block--80d34d8d-9a44-4d1a-b54c-99f0efb22803--7771 block block-block-content block-block-content8b2f7192-9b5d-4cae-903c-1f2674cb1095">
+
+
+
+                                        <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">
+                                            <div class="field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item">
+                                                <p><img alt="image  of Cerence Culture" data-entity-type="file" data-entity-uuid="d95356cc-fd93-47b8-97bb-3abfc68a0345" src="img/hero-img1.jpg"
+                                                    /></p>
+
+                                                <p><img alt="image  of Cerence Culture" data-entity-type="file" data-entity-uuid="572d53eb-face-44f1-a959-d4741646ae7c" src="img/hero-img2.jpg"
+                                                    /></p>
+
+                                                <p><img alt="Cerence Cultiue Image 3" data-entity-type="file" data-entity-uuid="bed697ff-5b2b-4f7b-9a35-c7b4b3ba4454" src="img/hero-img3.webp"
+                                                    /><img alt="Cerence Cultiue Image 4" data-entity-type="file" data-entity-uuid="e284943b-3561-42cb-a530-a7ed6f8f171c" src="img/hero-img4.jpg"
+                                                    /></p>
+
+                                                <p><img alt="Cerence Cultiue Image 5" data-entity-type="file" data-entity-uuid="678a0d4a-71e2-4933-b3f9-27132c232cbf" src="img/hero-img5.jpg"
+                                                    /></p>
+
+                                                <p><img alt="Cerence Cultiue Image 3" data-entity-type="file" data-entity-uuid="d851263f-56c7-4316-b3af-70c185b92238" src="img/hero-img6.jpg"
+                                                    /></p>
+
+                                                <p><img alt="Cerence Cultiue Image 7" data-entity-type="file" data-entity-uuid="a2081d19-5444-4001-8e05-30535a21e6a4" src="img/hero-img7.jpg"
+                                                    /></p>
+
+                                                <p><img alt="Cerence Cultiue Image 8" data-entity-type="file" data-entity-uuid="a8759ce4-ee4f-4f28-a6d5-8f8e0bd3b5c6" src="img/hero-img8.jpg"
+                                                    /></p>
+                                            </div>
+
+                                        </div>
+
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div class="row gx-0">
+                                <div class="col-6 pb-4 pb-lg-0">
+                                    <div class="ndm-ml-lg-n5 ndm-pr-lg-5">
+                                        <div class="careers-collage-0 careers-img-carousel owl-carousel owl-theme">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 pb-4 pb-lg-0">
+                                    <div class="my-lg-5 ">
+                                        <div class="careers-collage-1 careers-img-carousel owl-carousel owl-theme">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 pb-4 pb-lg-0">
+                                    <div class="ndm-ml-lg-n8 ndm-pr-lg-8 ndm-mt-lg-n5">
+                                        <div class="careers-collage-2 careers-img-carousel owl-carousel owl-theme">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 pb-4 pb-lg-0">
+                                    <div class="ndm-ml-lg-n5 ndm-pr-lg-5">
+                                        <div class="careers-collage-3 careers-img-carousel owl-carousel owl-theme">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- /ABOUT -->
+
+         <!-- PRODUCT SOLUTIONS -->
+
+         
+         
+         
+         <section class="product-solutions bg-white" >
+            <div class="mx-auto px-0">
+                <h2 class="h3 main-heading" data-aos="fade-up" data-aos-duration="1000" style="text-align: center; color:#343132; font-size:1.6rem;">EXCLUSIVE PRODUCT RANGE <br> <span style="color: #343132; font-size:1rem;">from BLACK COBRA</span></h2>
+                
+            </div>
+            <div class="slider-container container">
+                <div class="left-slide">
+                    <div style="background-color: grey">
+                        <h2 style="color: #fff; font-size:3.5rem; margin-bottom: 0px;">PVC </h2>
+                    <p style="padding:0 20px; text-align:justify;">BLACK COBRAs PVC Laminates are made from natural substances and apart from being waterproof, moisture-proof, fire-retardant and termite-proof.</p>
+                    <p style="padding:0 20px; text-align: justify;"><u>Applications</u>: Interiors and exteriors of commercial and residential projects.</p>
+                        <!-- <p>PVC</p> -->
+                      </div>
+
+                  <div style="background-color: #b99f8a">
+                    <h2 style="color: #fff; font-size:3.5rem; margin-bottom: 0px;">ALUMINIUM</h2>
+                    <!-- <p style="padding:0 20px; text-align:justify;">BLACK COBRA provide a wide range of Plywood products. In this range we have- Commercial Plywood, Marine Plywood, Shuttering Plywood, Calibrated Plywood, Flush Doors</p>
+                    <p style="padding:0 20px; text-align: justify;"><u>Applications</u>: Offices, Factories and buildings, Kitchen Cabinets, Table tops and so on.</p> -->
+                    <!-- <p>PVC</p> -->
+                  </div>
+                  <div style="background-color: rgba(165, 42, 42, 0.897)">
+                    <h2 style="color: #fff; font-size:3.5rem; margin-bottom: 0px;">PLYWOOD</h2>
+                    <p style="padding:0 20px; text-align:justify;">BLACK COBRA provide a wide range of Plywood products. In this range we have- Commercial Plywood, Marine Plywood, Shuttering Plywood, Calibrated Plywood, Flush Doors</p>
+                    <p style="padding:0 20px; text-align: justify;"><u>Applications</u>: Offices, Factories and buildings, Kitchen Cabinets, Table tops and so on.</p>
+                    <!-- <p>PVC</p> -->
+                  </div>
+                  <div style="background-color: #657e85">
+                    <h2 style="color: #fff; font-size:3.5rem; margin-bottom: 0px;">ACP</h2>
+                    <p style="padding:0 20px; text-align:justify;"><b>ALEX PANELS</b> are high-grade ACPs (Aluminium Composite Panels), which are majorly used on exterior walls and facades of buildings. ACPs are also sometimes known as sandwich panels.</p>
+                    <p style="padding:0 20px; text-align: justify;"><u>Applications</u>: Building exterior walls, Curtain wall panels, Display stands, etc.</p>
+
+                    <!-- <p>PVC</p> -->
+                  </div>
+                  <div style="background-color: #2b2e32; ">
+                    <h2 style="color: #fff; font-size:3.5rem; margin-bottom: 0px;">LAMINATE</h2>
+                    <p style="padding:0 20px; text-align:justify;">BLACK COBRA's decorative laminate ranges consist of two collections- 1mm & 0.8mm</p>
+                    <p style="padding:0 20px; text-align: justify;"><u>Applications</u>: Countertops for kitchens/science labs, school furniture, office furniture, healthcare, etc.</p>
+
+                   
+                  </div>
+                </div>
+                <div class="right-slide">
+                  <div
+                    style="
+                      background-image: url('./img/laminate1.png');
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-image: url('./img/acp1.png');
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-image: url('./img/plywood1.png');
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-image: url('./img/aluminium1.png');
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-image: url('./img/pvc1.png');
+                    "
+                  ></div>
+                </div>
+                <div class="action-buttons">
+                  <button class="down-button">
+                    <i class="fas fa-arrow-down"></i>
+                  </button>
+                  <button class="up-button">
+                    <i class="fas fa-arrow-up"></i>
+                  </button>
+                </div>
+              </div>
+        </section>
+        <!-- /PRODUCT SOLUTIONS -->
+
+
+         <!-- BRANDS -->
+         <section class="brands py-0 why" style="background-color: #e1e1e1; margin-top:-25px;">
+            <!-- KNOW US BETTER -->
+            <div class="section custom-counter know-us-better-counter" style="margin-bottom: -80px;">
+             <!-- <div class="lined">
+ <img src="/assets/images/about-know-us-better-lines.png" alt="image" class="img-fluid w-100">
+ </div> -->
+             <div class="container text-center">
+                 <div class="row punya1" style="margin-top: -40px;">
+                     <div class="col-12 text-center py-3 mt-md-2">
+                         <h4 class="main-heading">Why choose BLACK COBRA Laminates ?</h4>
+                         
+                     </div>
+                 </div>
+                 <!-- row -->
+                 <div class="row justify-content-around counter-transparent py-3 punya2" style=" margin-top:-65px;">
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4">
+                         <div class="counter-box">
+                             <!-- <span class="sprite-icon icon-star-user w-60p"></span>  -->
+                             <img src="./img/zero_emission_version2.png" style="width: 150px;"/>
+                             
+                             <div class="h3 d-flex align-items-center justify-content-center">
+                                 <!--  <span class="count" data-count="13">0</span> <span>Plants</span> -->
+                                 <span style="font-size: 1.3rem;">Zero Emission</span>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4" >
+                         <div class="counter-box">
+                             <!--  <span class="sprite-icon icon-star-user w-60p"></span> -->
+                             <img src="./img/anti_bacterial.png" style="width: 125px;"/>
+                             
+                             <div class="h3 d-flex align-items-center justify-content-center">
+                                 <span style="font-size: 1.3rem;">Anti-Bacterial</span>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4" data-aos-duration="1100">
+                         <div class="counter-box last">
+                             <!-- <span class="sprite-icon icon-boxs-group w-60p"></span> -->
+                             <img src="./img/borer_proof.png" style="width: 125px;"/>
+                             
+                             <div class="h3 d-flex align-items-center justify-content-center">
+                                 <span style="font-size: 1.3rem;">Borer Proof</span>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                 </div>
+                 <div class="row justify-content-around counter-transparent py-3 punya3" style=" margin-top:-65px;">
+ 
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4" data-aos-duration="1200" >
+                         <div class="counter-box">
+                             <!-- <span class="sprite-icon icon-star-user w-60p"></span> -->
+                             <img src="./img/high-load-bearing-capacity.png" style="width: 125px;" />
+                             
+                             <div class="h4 align-items-center justify-content-center">
+                                 <span style="font-size: 1.3rem;">High Load Bearing Capacity</span> 
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4" data-aos-duration="1200">
+                         <div class="counter-box">
+                             <!-- <span class="sprite-icon icon-hand-rupee-holding w-60p"></span> -->
+                             <img src="./img/eco_friendly.png" style="width: 125px;"/>
+                             
+                             <div class="h4 align-items-center justify-content-center">
+                                 
+                                 <span style="font-size: 1.3rem;">Eco-Friendly</span>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                     <div class="col-md-4 col-xl-4 col-lg-4 col-12 d-flex justify-content-center p-4" data-aos-duration="1200">
+                         <div class="counter-box last">
+                             <!-- <span class="sprite-icon icon-hand-rupee-holding w-60p"></span> -->
+                             <img src="./img/glue-line-treatment.png" style="width: 125px;"/>
+                             
+                             <div class="h4 align-items-center justify-content-center">
+                                 <span style="font-size: 1.3rem;">Glue Line Treatment</span> 
+                             </div>
+                         </div>
+                     </div>
+                     <!-- col -->
+                 </div>
+                 <!-- row -->
+             </div>
+             <!-- container -->
+         </div>
+         <!-- /KNOW US BETTER -->
+         </section>
+         <!-- /BRANDS -->
+
+        
+
+        <!-- EXPERIENCE CENTER -->
+        <section class="experience-center">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 py-3 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="main-heading h3 mb-0 pb-0" style="font-size: 1.6rem;"></h2>
+                            <small class="text-uppercase text-primary font-weight-bold" data-aos="fade-up" data-aos-duration="1500" style="font-size:1.6rem;">JOURNEY</small>
+                        </div>
+                    </div>
+                    <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./img/black-cobra-journey.png" alt="Black Cobra Journey" class="img-fluid w-100" style="height:auto;">
+                    </div>
+                </div>
+            </div>
+
+             <!-- events-album -->
+         <section class="pt-2 events-album position-relative" style="margin-top: 150px;">
+            <div class="container toto">
+                <div class="col-md-9 col-lg-8 mx-auto text-center">
+                    <h3 class="mb-3 text-uppercase main-heading" data-aos="fade-up" data-aos-duration="1000" style="font-size:1.6rem;">EVENT GLIMPSE</h3>
+                </div>
+                <div class="row px-3 popup-gallery gallery">
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/3.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/3.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/4.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/4.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/5.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/5.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/6.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/6.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/7.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/7.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-4 col-6 overflow py-3" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./img/8.png" title="Matecia 2022">
+                      <img class="img-fluid w-100 scale1" src="./img/8.png" alt="">
+                      <div class="gallery-overlay">
+                        <div class="gallery-text">
+                          <i class="fas fa-search-plus"></i> 
+                        </div>
+                      </div>
+                    </a>
+                    </div>
+                    
+                   
+                </div>
+                <a aria-label="button Learn more" class="btn btn-lg" href="#" style="background-color: #343132; color:#fff; font-weight:600;">SEE MORE</a>
+            </div>
+           
+
+        </section>
+        <!-- /CSR SLIDER -->
+
+
+
+        </section>
+        <!-- /EXPERIENCE CENTER -->
+
+        
+
+       
+
+   
+
+   
+  </main>
+
+  <!-- page-wrpaper -->
+  
+  <footer>
+    <section class="pb-0" style="background-color: #343132; ">
+      <div class="container pb-lg-5 pb-4">
+        <div class="row">
+          <div class="col-lg-3 col-12 d-flex flex-lg-column flex-row my-2 justify-content-lg-around justify-content-between align-items-lg-start align-items-center">
+            <div class="mr-3"><a href="."><img src="./img/bc-logo-shine.png" alt="logo image" class="img-fluid logo" style="background-color: #000; padding: 20px 20px;"></a> </div>
+          </div><!--col-->
+          <div class="col-lg-3 col-md-4 col-6 my-3 justify-content-md-center d-flex">
+            <div class="nav flex-column">
+              <h5 class="mb-5" style="color: #fff;">QUICK LINKS</h5>
+              <a href="#" class="nav-link pl-0 py-1">HOME</a>
+<a href="#" class="nav-link pl-0 py-1">ABOUT US</a>
+<a href="#" class="nav-link pl-0 py-1">MEDIA & EVENTS</a>
+<a href="#" class="nav-link pl-0 py-1">E-CATALOGUES</a>
+<a href="#" class="nav-link pl-0 py-1">CONTACT US</a>
+
+
+            </div>
+          </div><!--col-->
+          <div class="col-lg-3 col-md-4 col-6 my-3 justify-content-md-center d-flex">
+            <div class="nav flex-column">
+              <h5 class="mb-5" style="color: #fff;">OUR PRODUCTS</h5>
+              <a href="#" class="nav-link pl-0 py-1">PVC</a>
+              <a href="#" class="nav-link pl-0 py-1">LAMINATES</a>
+              <a href="#" class="nav-link pl-0 py-1">ALUMINIUM</a>
+              <a href="#" class="nav-link pl-0 py-1">ACP</a>
+              <a href="#" class="nav-link pl-0 py-1">PLYWOOD</a>
+
+            </div>
+          </div><!--col--> 
+          <div class="col-lg-3 col-md-4 col-sm-6 col-5 my-3 justify-content-md-center d-flex">
+            <div class="nav flex-column">
+               <h5 class="mb-5" style="color: #fff;">CONTACT US</h5>
+              <p style="color: #fff;">Plot No. 24, Mehmoodpur, Salempur Road, Chhachhrauli, Yamuna Nagar- 135 103</p>
+              <a href="tel:919355504111" class="nav-link pl-0 py-1">Phone: +91 9355504111</a>
+
+            </div>
+          </div><!--col-->
+        </div><!--row-->
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row pt-2 align-items-center text-center">
+            <div class="col-md-4 py-2 text-white">
+                &#169; 2022, BLACK COBRA | ALL Rights Reserved 
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="footer-social d-flex justify-content-center">
+                  <a href="https://www.facebook.com/blackcobragroup" target="_blank" class="custom-social-icon d-flex justify-content-center align-items-center">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/blackcobragroup/" target="_blank" class="custom-social-icon d-flex justify-content-center align-items-center">
+                      <i class="ti-instagram"></i>
+                    </a>               
+                  <a href="https://www.youtube.com/channel/UCrJ-b50GjlpqDnvCp2Ol5_w" target="_blank" class="custom-social-icon d-flex justify-content-center align-items-center">
+                       <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/79742728/admin/" target="_blank" class="custom-social-icon d-flex justify-content-center align-items-center">
+                       <i class="fab fa-linkedin"></i>
+                    </a>
+              </div>
+            </div>
+            <div class="col-md-4 py-2 text-white">
+              Designed & Developed by <a href="https://www.webadsindia.com/" class="" target="_blank" style="color:yellowgreen">Webads India</a>
+            </div>
+              
+          </div><!--row-->
+        </div>
+      </div>
+    </section>
+  </footer>
+    
+  
+   
+
+    <!-- Interior modal -->
+    <div class="modal" id="interior-modal" tabindex="-1" role="dialog" aria-labelledby="interior-modalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <button type="button" class="close btn p-3" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="row">
+                                <div class="col-xl-6 p-0 d-none d-xl-block">
+                                    <img class=" img-fluid" src="./wp-content/themes/black-cobra/assets/images/interior.jpg" alt="interior">
+                                </div>
+                                <div class="col-xl-6 align-self-center pr-0 pl-4 py-5">
+                                    <div class="px-sm-3 px-1">
+                                        <div role="form" class="wpcf7" id="wpcf7-f624-o1" lang="en-US" dir="ltr">
+                                            <div class="screen-reader-response">
+                                                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                <ul></ul>
+                                            </div>
+                                            <form action="/#wpcf7-f624-o1" method="post" class="wpcf7-form init pr-0 pl-3" novalidate="novalidate" data-status="init">
+                                                <div style="display: none;">
+                                                    <input type="hidden" name="_wpcf7" value="624" />
+                                                    <input type="hidden" name="_wpcf7_version" value="5.6.3" />
+                                                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f624-o1" />
+                                                    <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                                </div>
+                                                <h6 class="modal-title pb-3" id="interior-modalLabel">
+                                                    <span class="h5 d-block">Please share your Contact Details </span>
+                                                    <span class="h6">for our executive to get in touch with you</span>
+                                                </h6>
+
+                                                <div class="form-group mb-43">
+                                                    <label for="exampleInputEmail1">Name</label>
+                                                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control rounded-0 py-4 border-dark" aria-required="true" aria-invalid="false" />
+                                                </div>
+
+                                                <div class="form-group mb-43">
+                                                    <label for="catalouge-phone">Phone No.</label>
+                                                    <input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-control rounded-0 py-4 border-dark" aria-required="true" aria-invalid="false" />
+                                                </div>
+
+                                                <div class="form-group mb-43mt-2">
+                                                    <label for="catalougr-email">Email</label>
+                                                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control rounded-0 py-4 border-dark" aria-required="true" aria-invalid="false" />
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="city-phone">City</label>
+                                                    <input type="text" name="your-city" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control rounded-0 py-4 border-dark" aria-required="true" aria-invalid="false" />
+                                                </div>
+
+                                                <div class="">
+                                                    <input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit btn px-5 btn-primary" />
+                                                </div>
+                                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!------------ JavaScript  files -------------->
+            <!-- JQUERY.MIN JS -->
+            <script src="./wp-content/themes/black-cobra/assets/js/jquery.min.js"></script>
+            <!-- BOOTSTRAP.MIN JS -->
+            <script src="./wp-content/themes/black-cobra/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- OWL CAROUSEL JS -->
+            <script src="./wp-content/themes/black-cobra/assets/plugins/owl-carousel/js/owl.carousel.js"></script>
+            <!-- SLICK JS -->
+            <script src="./wp-content/themes/black-cobra/assets/plugins/slick/slick.min.js"></script>
+            <!-- aos JS -->
+            <script src="./wp-content/themes/black-cobra/assets/plugins/aos/aos.js"></script>
+            <!-- Magnific Popup core JS file -->
+            <script src="./wp-content/themes/black-cobra/assets/plugins/magnific/jquery.magnific-popup.js"></script>
+            <!-- CUSTOM FUCTIONS  -->
+            <script src="./wp-content/themes/black-cobra/assets/js/custom.min.js"></script>
+
+
+            <script>
+                let lockedUp = false;
+
+                function lockGalleryUp() {
+                    $('.slideshow-left').css("pointer-events", "none");
+                    lockedUp = true;
+                }
+
+                function unlockGalleryUp() {
+                    $('.slideshow-left').css("pointer-events", "");
+                    lockedUp = false;
+                }
+                let lockedDown = false;
+
+                function lockGalleryDown() {
+                    $('.slideshow-left').css("pointer-events", "none");
+                    lockedDown = true;
+                }
+
+                function unlockGalleryDown() {
+                    $('.slideshow-left').css("pointer-events", "");
+                    lockedDown = false;
+                }
+                var $slider = $('.slideshow .slider'),
+                    maxItems = $('.item', $slider).length,
+                    dragging = false,
+                    tracking, rightTracking;
+                $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
+                rightItems = $('.item', $sliderRight).toArray();
+                reverseItems = rightItems.reverse();
+                $('.slider', $sliderRight).html('');
+                for (i = 0; i < maxItems; i++) {
+                    $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+                }
+                let lastSlide = 0;
+                $slider.addClass('slideshow-left');
+                $('.slideshow-left').slick({
+                    vertical: true,
+                    verticalSwiping: true,
+                    arrows: false,
+                    infinite: true,
+                    dots: true,
+                    speed: 900,
+                    cssEase: 'cubic-bezier(.42,0,.58,1)',
+                    touchThreshold: 30,
+                    touchMove: false,
+                }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                    if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
+                        $('.slideshow-right .slider').slick('slickGoTo', -1);
+                    } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
+                        $('.slideshow-right .slider').slick('slickGoTo', maxItems);
+                    } else {
+                        $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
+                    }
+                    lastSlide = currentSlide;
+                }).on("afterChange", function(event, slick, currentSlide, nextSlide) {
+                    if (currentSlide == 0 && lastSlide == currentSlide + 1) {
+                        lockGalleryUp();
+                    } else if (currentSlide == maxItems - 1 && lastSlide == currentSlide - 1) {
+                        lockGalleryDown();
+                    }
+                }).on("mousewheel", function(event) {
+                    event.preventDefault();
+                    if (event.originalEvent.deltaY > 0) {
+                        $(this).slick('slickNext');
+                    } else if (event.originalEvent.deltaY < 0) {
+                        $(this).slick('slickPrev');
+                    };
+                });
+                $('.slideshow-left').on('mousedown touchstart', function(e) {
+                    dragging = true;
+                    tracking = $('.slick-track', $slider).css('transform');
+                    tracking = parseInt(tracking.split(',')[5]);
+                    rightTracking = $('.slideshow-right .slick-track').css('transform');
+                    rightTracking = parseInt(rightTracking.split(',')[5]);
+                }).on('mousemove touchmove', function(e) {
+                    if (dragging) {
+                        newTracking = $('.slideshow-left .slick-track').css('transform');
+                        newTracking = parseInt(newTracking.split(',')[5]);
+                        diffTracking = newTracking - tracking;
+                        $('.slideshow-right .slick-track').css({
+                            'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'
+                        });
+                    }
+                }).on('mouseleave touchend mouseup', function() {
+                    dragging = false;
+                });
+                $('.slideshow-right .slider').slick({
+                    swipe: false,
+                    vertical: true,
+                    arrows: false,
+                    infinite: true,
+                    speed: 850,
+                    cssEase: 'cubic-bezier(.42,0,.58,1)',
+                    initialSlide: maxItems - 1,
+                    touchThreshold: 30,
+                    touchMove: false,
+                });
+                let lastScrollY = 0;
+                $(window).on('scroll', function(e) {
+                    let currentY = $(window).scrollTop();
+                    let deltaY = currentY - lastScrollY;
+                    $('.slideshow-left').each(function(index, value) {
+                        let $value = $(value);
+                        let windowHeight = $(window).height();
+                        let bbox = $value[0].getBoundingClientRect();
+                        if (lockedUp && deltaY > 0 && bbox.y + bbox.height < windowHeight) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            unlockGalleryUp();
+                        } else if (lockedDown && deltaY < 0 && bbox.y > 0) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            unlockGalleryDown();
+                        }
+                    });
+                    lastScrollY = currentY;
+                });
+            </script>
+
+            <script>
+                $(".where-to-buy .nav-item").mouseenter(function() {
+                    // alert(this.id);
+                    $(".where-to-buy .nav-item").removeClass('has-active');
+                    $("#" + this.id).addClass('has-active');
+                });
+            </script>
+            <script>
+                function hoverimage(bghoverimage) {
+                    document.getElementsByClassName("product-solution-bg")[0].style = "background-image:url(" + bghoverimage + ");";
+                }
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'></script>
+            <script type='text/javascript' id='contact-form-7-js-extra'>
+                /* <![CDATA[ */
+                var wpcf7 = {
+                    "api": {
+                        "root": "https:\/\/www.black-cobra.com\/wp-json\/",
+                        "namespace": "contact-form-7\/v1"
+                    }
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+            <script type='text/javascript' src='./wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js' id='jvcf7_jquery_validate-js'></script>
+            <script type='text/javascript' id='jvcf7_validation-js-extra'>
+                /* <![CDATA[ */
+                var scriptData = {
+                    "jvcf7_default_settings": {
+                        "jvcf7_show_label_error": "errorMsgshow",
+                        "jvcf7_invalid_field_design": "theme_0"
+                    }
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js' id='jvcf7_validation-js'></script>
+
+            <script>
+                let lockedUp = false;
+
+                function lockGalleryUp() {
+                    $('.slideshow-left').css("pointer-events", "none");
+                    lockedUp = true;
+                }
+
+                function unlockGalleryUp() {
+                    $('.slideshow-left').css("pointer-events", "");
+                    lockedUp = false;
+                }
+                let lockedDown = false;
+
+                function lockGalleryDown() {
+                    $('.slideshow-left').css("pointer-events", "none");
+                    lockedDown = true;
+                }
+
+                function unlockGalleryDown() {
+                    $('.slideshow-left').css("pointer-events", "");
+                    lockedDown = false;
+                }
+                var $slider = $('.slideshow .slider'),
+                    maxItems = $('.item', $slider).length,
+                    dragging = false,
+                    tracking, rightTracking;
+                $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
+                rightItems = $('.item', $sliderRight).toArray();
+                reverseItems = rightItems.reverse();
+                $('.slider', $sliderRight).html('');
+                for (i = 0; i < maxItems; i++) {
+                    $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+                }
+                let lastSlide = 0;
+                $slider.addClass('slideshow-left');
+                $('.slideshow-left').slick({
+                    vertical: true,
+                    verticalSwiping: true,
+                    arrows: false,
+                    infinite: true,
+                    dots: true,
+                    speed: 900,
+                    cssEase: 'cubic-bezier(.42,0,.58,1)',
+                    touchThreshold: 30,
+                    touchMove: false,
+                }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                    if (currentSlide > nextSlide && nextSlide == 0 && currentSlide == maxItems - 1) {
+                        $('.slideshow-right .slider').slick('slickGoTo', -1);
+                    } else if (currentSlide < nextSlide && currentSlide == 0 && nextSlide == maxItems - 1) {
+                        $('.slideshow-right .slider').slick('slickGoTo', maxItems);
+                    } else {
+                        $('.slideshow-right .slider').slick('slickGoTo', maxItems - 1 - nextSlide);
+                    }
+                    lastSlide = currentSlide;
+                }).on("afterChange", function(event, slick, currentSlide, nextSlide) {
+                    if (currentSlide == 0 && lastSlide == currentSlide + 1) {
+                        lockGalleryUp();
+                    } else if (currentSlide == maxItems - 1 && lastSlide == currentSlide - 1) {
+                        lockGalleryDown();
+                    }
+                }).on("mousewheel", function(event) {
+                    event.preventDefault();
+                    if (event.originalEvent.deltaY > 0) {
+                        $(this).slick('slickNext');
+                    } else if (event.originalEvent.deltaY < 0) {
+                        $(this).slick('slickPrev');
+                    };
+                });
+                $('.slideshow-left').on('mousedown touchstart', function(e) {
+                    dragging = true;
+                    tracking = $('.slick-track', $slider).css('transform');
+                    tracking = parseInt(tracking.split(',')[5]);
+                    rightTracking = $('.slideshow-right .slick-track').css('transform');
+                    rightTracking = parseInt(rightTracking.split(',')[5]);
+                }).on('mousemove touchmove', function(e) {
+                    if (dragging) {
+                        newTracking = $('.slideshow-left .slick-track').css('transform');
+                        newTracking = parseInt(newTracking.split(',')[5]);
+                        diffTracking = newTracking - tracking;
+                        $('.slideshow-right .slick-track').css({
+                            'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'
+                        });
+                    }
+                }).on('mouseleave touchend mouseup', function() {
+                    dragging = false;
+                });
+                $('.slideshow-right .slider').slick({
+                    swipe: false,
+                    vertical: true,
+                    arrows: false,
+                    infinite: true,
+                    speed: 850,
+                    cssEase: 'cubic-bezier(.42,0,.58,1)',
+                    initialSlide: maxItems - 1,
+                    touchThreshold: 30,
+                    touchMove: false,
+                });
+                let lastScrollY = 0;
+                $(window).on('scroll', function(e) {
+                    let currentY = $(window).scrollTop();
+                    let deltaY = currentY - lastScrollY;
+                    $('.slideshow-left').each(function(index, value) {
+                        let $value = $(value);
+                        let windowHeight = $(window).height();
+                        let bbox = $value[0].getBoundingClientRect();
+                        if (lockedUp && deltaY > 0 && bbox.y + bbox.height < windowHeight) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            unlockGalleryUp();
+                        } else if (lockedDown && deltaY < 0 && bbox.y > 0) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            unlockGalleryDown();
+                        }
+                    });
+                    lastScrollY = currentY;
+                });
+            </script>
+
+            <script>
+                $(".where-to-buy .nav-item").mouseenter(function() {
+                    // alert(this.id);
+                    $(".where-to-buy .nav-item").removeClass('has-active');
+                    $("#" + this.id).addClass('has-active');
+                });
+            </script>
+            <script>
+                function hoverimage(bghoverimage) {
+                    document.getElementsByClassName("product-solution-bg")[0].style = "background-image:url(" + bghoverimage + ");";
+                }
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'></script>
+            <script type='text/javascript' id='contact-form-7-js-extra'>
+                /* <![CDATA[ */
+                var wpcf7 = {
+                    "api": {
+                        "root": "https:\/\/www.black-cobra.com\/wp-json\/",
+                        "namespace": "contact-form-7\/v1"
+                    }
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+            <script type='text/javascript' src='./wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js' id='jvcf7_jquery_validate-js'></script>
+            <script type='text/javascript' id='jvcf7_validation-js-extra'>
+                /* <![CDATA[ */
+                var scriptData = {
+                    "jvcf7_default_settings": {
+                        "jvcf7_show_label_error": "errorMsgshow",
+                        "jvcf7_invalid_field_design": "theme_0"
+                    }
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript' src='./wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js' id='jvcf7_validation-js'></script>
+
+            <script type="text/javascript">
+                var s_CCSWebHostingAccount = "trcg-";
+            </script>
+            <script type="application/json" data-drupal-selector="drupal-settings-json">
+                {
+                    "path": {
+                        "baseUrl": "\/",
+                        "scriptPath": null,
+                        "pathPrefix": "",
+                        "currentPath": "node\/5811",
+                        "currentPathIsAdmin": false,
+                        "isFront": true,
+                        "currentLanguage": "en",
+                        "themeUrl": "sites\/g\/files\/knoqqb75506\/themes\/site\/nir_pid3429"
+                    },
+                    "pluralDelimiter": "\u0003",
+                    "suppressDeprecationErrors": true,
+                    "ajaxPageState": {
+                        "libraries": "classy\/node,nir_analytics\/nir_analytics.adobe_launch,nir_analytics\/nir_analytics.adobe_prod,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_base\/sidr,nir_ckeditor_datatables\/datatables,nir_faq\/nir_faq_accordion,nir_multimedia\/nir_multimedia,nir_pid3429\/override,nir_website_notices\/nir_website_notices.notices,radix_layouts\/radix_layouts,system\/base",
+                        "theme": "nir_pid3429",
+                        "theme_token": null
+                    },
+                    "ajaxTrustedUrl": [],
+                    "user": {
+                        "uid": 0,
+                        "permissionsHash": "b90a2e4da0fa114cc6b0b0ecaf570bd1630a6bdeeb031a01037f9a8c6d33aca3"
+                    }
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="./js/one.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+            <script src="//unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <script src="./js/two.js"></script>
+            <script src="//assets.adobedtm.com/898335afd880/c52ee8aa1e90/launch-5ef258dce664.min.js" async></script>
+        
+        
+            <script type="text/javascript">
+                window.NREUM || (NREUM = {});
+                NREUM.info = {
+                    "beacon": "bam.nr-data.net",
+                    "licenseKey": "761e715901",
+                    "applicationID": "37278538,24276188",
+                    "transactionName": "ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH3xCFkBQXGlbCgVQaXNXXhdCXlxZUBc9e1pUXWYKVUZzWlsRE1pZXF1CTg5HWVBC",
+                    "queueTime": 0,
+                    "applicationTime": 929,
+                    "atts": "ShJUF18aSEg=",
+                    "errorBeacon": "bam.nr-data.net",
+                    "agent": ""
+                }
+            </script>
+
+            <script>
+                const sliderContainer = document.querySelector(".slider-container");
+const slideRight = document.querySelector(".right-slide");
+const slideLeft = document.querySelector(".left-slide");
+const upButton = document.querySelector(".up-button");
+const downButton = document.querySelector(".down-button");
+const slidesLength = slideRight.querySelectorAll("div").length;
+
+let activeSlideIndex = 0;
+
+slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
+
+const changeSlide = (direction) => {
+  const sliderHeight = sliderContainer.clientHeight;
+  if (direction === "up") {
+    activeSlideIndex++;
+    if (activeSlideIndex > slidesLength - 1) activeSlideIndex = 0;
+  } else if (direction === "down") {
+    activeSlideIndex--;
+    if (activeSlideIndex < 0) activeSlideIndex = slidesLength - 1;
+  }
+  slideRight.style.transform = `translateY(-${
+    activeSlideIndex * sliderHeight
+  }px)`;
+  slideLeft.style.transform = `translateY(${
+    activeSlideIndex * sliderHeight
+  }px)`;
+};
+
+upButton.addEventListener("click", () => changeSlide("up"));
+downButton.addEventListener("click", () => changeSlide("down"));
+
+            </script>
+</body>
+
+</html>

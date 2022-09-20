@@ -1,0 +1,147 @@
+body {
+    background: none;
+}
+
+#wrapper {
+    width: 97%;
+    border: 0;
+}
+
+#breadcrumb {
+    display: none;
+}
+
+#column1 {
+    display: none;
+    width: 0%;
+}
+
+#column2 {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+#column3 {
+    display: none;
+    width: 0%;
+}
+
+#footer {
+    display: none;
+}
+
+#ndq-content {
+    width: 97%;
+}
+
+#ndq-content .ndq-expand-link,
+#ndq-content .ndq-expand-link-nobio {
+    color: #000;
+}
+
+#ndq-content #ndq-exp-col {
+    display: none;
+}
+
+#ndq-content.ndq-releasedetail {
+    width: 100%;
+    background: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 120%;
+}
+
+.ndq-releasedetail #ndq-header {
+    display: none;
+}
+
+.ndq-releasedetail #ndq-article {
+    width: 97%;
+    border: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ndq-releasedetail .ndq-rightcol {
+    display: none;
+}
+
+#ndq-content .view-widget-sec-filings table.nirtable td:before {
+    content: "" !important;
+    padding-left: 0;
+}
+
+.nir-node--6016 #ndq-content .view-widget-sec-filings table.nirtable td {
+    padding-left: 0 !important;
+}
+
+a[href]:after {
+    content: none !important;
+}
+
+header,
+.header,
+#header,
+footer,
+.footer,
+#footer,
+nav,
+.nav,
+#nav,
+img,
+form,
+.breadcrumbs,
+#breadcrumbs,
+.breadcrumb,
+#breadcrumb,
+#ndq-tools,
+#ndq-tools-wrap,
+.copyright,
+.flex-control-nav,
+.ndq-view-all,
+.region-sidebar-first,
+.region-breadcrumbs,
+#images-top,
+.toolbarIcons,
+.captcha,
+.box__right,
+video,
+section.min-vh-ratio,
+#sDiscover,
+.ndm-card-social,
+.ndm-socials {
+    display: none !important;
+}
+
+* {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+}
+
+* {
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+* {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+.region-hero .pt-33vh {
+    padding: 0;
+}
+
+.region-hero .pt-33vh h1 {
+    color: #333;
+}
